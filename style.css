@@ -63,3 +63,16 @@ body{
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
+.card{
+    overflow: hidden;
+    /* box-sizing: border-box; */
+    width: 350px;
+    border: 3px solid black;
+}
+.card-cotainer{
+    margin: 0 auto;
+}
+.card-img{
+    width: 360px;
+ 
+}
