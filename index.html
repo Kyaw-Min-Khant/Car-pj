@@ -4,32 +4,393 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Car-pj</title>
+   <link rel="stylesheet" href="./css/output.css">
+    <style>
+.car-img{
+  height: 400px;
+  object-fit: contain;
+}
+.red{
+  background-image: linear-gradient(0deg,rgb(37, 82, 107),rgb(202, 202, 202));
+}
+.blue{
+  background-image: linear-gradient(20deg,rgb(56, 51, 51),rgb(255, 251, 34));
+}
+@media screen and (max-width:750px){
+ .car-img{
+height: 300px;
+ }
+}
+@media screen and (max-width:550px){
+ .car-img{
+height: 200px;
+ }
+}
+@media screen and (max-width:400px){
+ .car-img{
+height: 150px;
+ }
+}
+      </style>
 </head>
 <body>
-    <header>
-        <div class="header-cotainer">
-            <img src="./media/BMW_1963-1997_Logo.svg-removebg-preview.png" alt="" class="img">
-            <nav class="nav-cotainer">
-                <button class="nav-button">Showroom</button>
-                <button class="nav-button">Cars</button>
-                <button class="nav-button">About </button>
-            </nav>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Nav-bar -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-dark sticky-top">
+        <div class="container">
+          <a class="navbar-brand d-flex justify-content-between" href="#">
+            <img src="./media/360_F_361916230_zcmH1nU3HvaojmQ8CdXpw6Cynn5qyrZo-removebg-preview.png" alt="" style="width: 60px" class="">
+            <h3 class="text-danger ps-2">Betamite</h3>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse fs-4 " id="navbarSupportedContent">
+            <ul class="navbar-nav nav-pills ms-auto mb-2 mb-lg-0">
+              <li class="nav-item ms-3">
+                <a class="nav-link text-danger fw-bold" aria-current="page" href="#">Buy</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link text-danger fw-bold" href="#">Rent</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a href="" class="nav-link text-danger fw-bold">Ride</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link text-danger fw-bold">Services</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </header>
-    <section class="cotainer">
-        <img src="./media/cosySec-removebg-preview.png" alt="" class="img-car">
-        <div class="left-cotainer">
-            <h1 class="cotainer-title">BMW 3 Series Sedan</h1>
-            <p class="cotainer-word">BMW Individual Tanzanite Blue metallic</p>
-            <p class="cotainer-word-1">Electric engine power kW (PS) at 1/min</p>
+      </nav>
+      <!-- hero section -->
+      <div class=" container-fluid  cr-color mb-3">
+        <div class=" row justify-content-center align-items-center">
+          <div class=" col-12 col-lg-6 p-5">
+            <h3 class=" display-5 fw-semibold text-dark">Looking to save more on your rental car?</h3>
+            <p class="fs-5 mt-3 text-dark">Discover laxuary cars,sports cars,trucks on Betamite,</p>
+            <p class="fs-5 mt-3 text-dark">We have many car brands and can order car suppliesment.</p>
+            <div class="row justify-content-center">
+            <!-- <img src="./media/5a902dbf7f96951c82922875.png" alt="" class=" col-4 w-50" style="height:50px"> -->
+            <img src="./media/download-on-the-app-store-logo-png-23.png" alt="" class="download-img col-4">
+          </div>
         </div>
-    </section>
-   <div class="border border-warning border-5 w-50 m-4 bg-dark">
-    <h1 class="fs-1 text-danger p-3">San Kyi Tr</h1>
-    <p class="text-light p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptates provident aspernatur, nesciunt delectus accusantium?</p>
-   </div>
+
+          <div class=" col-12 col-lg-6">
+            <img src="./media/Ghibli_00000.webp" alt="" class=" car-img w-100">
+          </div>
+        </div>
+      </div>
+
+      <!-- carousel -->
+      <div class="carousel slide" id="slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#slide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#slide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#slide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#slide" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+            <div class=" carousel-inner carousel-fade container-fluid">
+                <div class="carousel-item active cotainer-fluid bg-dark">
+                  <div class="red row justify-content-center">
+                    <div class="col-12 col-lg-5">
+                  <img src="./media/cosySec (1).png" alt="" class="car-img  w-100">
+                </div>
+                <div class="col-12 col-lg-5">
+                        <div class="w-100 mx-auto mt-lg-3 px-1 px-md-5 px-sm-3">
+                            <p class="display-4 text-light">Price : </p>
+                            <div class="my-2">
+                              <h5 class="text-light">Interior Design</h5>
+                              <div class=" progress w-100">
+                                  <div class=" progress-bar bg-danger" style="width:80%;"></div>
+                              </div>
+                            </div>
+                            <div class="my-2">
+                                <h5 class="text-light">Performance</h5>
+                                <div class=" progress w-100">
+                                    <div class=" progress-bar bg-danger" style="width:50%;"></div>
+                                </div>
+                            </div>
+                            <div class="my-2">
+                                <h5 class="text-light">Fuel-Efficiency</h5>
+                                <div class=" progress w-100">
+                                    <div class=" progress-bar bg-danger" style="width:60%;"></div>
+                                </div>
+                            </div>
+                            <div class="my-2">
+                                <h5 class="text-light">Safety</h5>
+                                <div class=" progress w-100">
+                                    <div class=" progress-bar bg-danger" style="width:80%;"></div>
+                                </div>
+                                <button class="btn btn-outline-light fs-4 mx-auto d-block my-5">Test drive
+                                  <i class="bi bi-car-front-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+                <div class=" carousel-item bg-dark container-fluid">
+                  <div class=" row justify-content-center">
+                    <div class=" col-12 col-lg-5">
+                    <img src="./media/BMW-X1-xDrive25e_ModelCard.png.asset.1654755120778.png" alt="" class="car-img w-100">
+                  </div>
+                  <div class=" col-12 col-lg-5">
+                    <div class="w-100 mx-auto mt-lg-3 px-1 px-md-5 px-sm-3">
+                      <p class="display-4 text-light">Price : </p>
+                      <div class="my-2">
+                        <h5 class="text-light">Interior Design</h5>
+                        <div class=" progress w-100">
+                            <div class=" progress-bar bg-warning" style="width:80%;"></div>
+                        </div>
+                      </div>
+                      <div class="my-2">
+                          <h5 class="text-light">Performance</h5>
+                          <div class=" progress w-100">
+                              <div class=" progress-bar bg-warning" style="width:50%;"></div>
+                          </div>
+                      </div>
+                      <div class="my-2">
+                          <h5 class="text-light">Fuel-Efficiency</h5>
+                          <div class=" progress w-100">
+                              <div class=" progress-bar bg-warning" style="width:30%;"></div>
+                          </div>
+                      </div>
+                      <div class="my-2">
+                          <h5 class="text-light">Safety</h5>
+                          <div class=" progress w-100">
+                              <div class=" progress-bar bg-warning" style="width:90%;"></div>
+                          </div>
+                          <button class="btn btn-outline-warning fs-4 mx-auto d-block my-5">Test drive
+                            <i class="bi bi-car-front-fill"></i>
+                          </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" carousel-item bg-light cotainer-fluid">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-lg-5 ">
+                  <img src="./media/cosySec-removebg-preview-removebg-preview.png" alt="" class="car-img w-100">
+                </div>
+                <div class="col-12 col-lg-5 mx-lg-0">
+                  <div class="w-100 mx-auto mt-lg-3 px-1 px-md-5 px-sm-3">
+                    <p class="display-4 text-dark">Price : </p>
+                    <div class="my-2">
+                      <h5 class="text-dark">Interior Design</h5>
+                      <div class=" progress w-100">
+                          <div class=" progress-bar bg-danger" style="width:80%;"></div>
+                      </div>
+                    </div>
+                    <div class="my-2">
+                        <h5 class="text-dark">Performance</h5>
+                        <div class=" progress w-100">
+                            <div class=" progress-bar bg-danger" style="width:50%;"></div>
+                        </div>
+                    </div>
+                    <div class="my-2">
+                        <h5 class="text-dark">Fuel-Efficiency</h5>
+                        <div class=" progress w-100">
+                            <div class=" progress-bar bg-danger" style="width:30%;"></div>
+                        </div>
+                    </div>
+                    <div class="my-2">
+                        <h5 class="text-dark">Safety</h5>
+                        <div class=" progress w-100">
+                            <div class=" progress-bar bg-danger" style="width:90%;"></div>
+                        </div>
+                        <button class="btn btn-outline-danger fs-4 mx-auto d-block my-5">Test drive
+                          <i class="bi bi-car-front-fill"></i>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+                <div class=" carousel-item cotainer-fluid">
+                  <div class="blue row justify-content-center">
+                    <div class="col-12 col-lg-5">
+                    <img src="./media/bmw-4-series-convertible-offer-cosy-image.png" alt="" class="car-img w-100">
+                  </div>
+                  <div class="col-12 col-lg-5">
+                    <div class="w-100 mx-auto my-0 mt-lg-3 px-1 px-md-5 px-sm-3">
+                      <p class="display-4 text-dark">Price : </p>
+                      <div class="my-2">
+                        <h5 class="text-dark">Interior Design</h5>
+                        <div class=" progress w-100">
+                            <div class=" progress-bar bg-danger" style="width:80%;"></div>
+                        </div>
+                      </div>
+                      <div class="my-2">
+                          <h5 class="text-dark">Performance</h5>
+                          <div class=" progress w-100">
+                              <div class=" progress-bar bg-danger" style="width:50%;"></div>
+                          </div>
+                      </div>
+                      <div class="my-2">
+                          <h5 class="text-dark">Fuel-Efficiency</h5>
+                          <div class=" progress w-100">
+                              <div class=" progress-bar bg-danger" style="width:90%;"></div>
+                          </div>
+                      </div>
+                      <div class="my-2">
+                          <h5 class="text-dark">Safety</h5>
+                          <div class=" progress w-100">
+                              <div class=" progress-bar bg-danger" style="width:50%;"></div>
+                          </div>
+                          <button class="btn btn-outline-dark fs-4 mx-auto d-block my-5">Test drive
+                            <i class="bi bi-car-front-fill"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#slide" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#slide" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+             
+            </div>
+
+      
+   <!-- Second-part -->
+   <div class=" cotainer">
+    <div class="row  d-flex justify-content-around g-5">
+    <div class=" card col-10 col-lg-3 col-md-5 ms-3 shadow-lg">
+        <div class="card-body ">
+            <img src="./media/cq5dam.resized.img.485.low.time1463144579137.jpg"  class="w-100" alt="">
+            <h4 class="">My BMW App
+            </h4>
+            <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, aliquam!</p>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="btn p-lg-2 p-0">
+            <i class="bi bi-chevron-left me-3"></i>find out more
+          </a>
+        </div>
+    </div>
+    <div class=" card col-10 col-lg-3 col-md-5 ms-3 shadow-lg">
+        <div class="card-body">
+          <img src="./media/cq5dam.resized.img.485.low.time1563453442344.jpg" alt="" class="w-100">
+          <h4 class="">Discover Online Deals</h4>
+          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, aliquam!</p>
+        </div>
+          <div class="card-footer">
+            <a href="#" class="btn p-lg-2 p-0">
+              <i class="bi bi-chevron-left me-3"></i>find out more
+            </a>
+          </div>
+    </div>
+    <div class=" card col-10 col-lg-3 col-md-5 ms-3 shadow-lg">
+        <div class="card-body p-1">
+          <img src="./media/cq5dam.resized.img.485.low.time1593687809190.jpg" alt="" class="w-100">
+          <h4 class="">BMW Financial Services</h4>
+          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, aliquam!</p>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="btn p-lg-2 p-0">
+            <i class="bi bi-chevron-left me-3"></i>find out more
+          </a>
+        </div>  
+        </div>
+    <div class=" card col-10 col-lg-3 col-md-5 ms-3 shadow-lg">
+        <div class="card-body p-1">
+          <img src="./media/cq5dam.resized.img.485.low.time1621926531440.jpg" alt="" class="w-100">
+          <h4 class="">Subscribe to a BMW</h4>
+          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, aliquam!</p>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="btn p-lg-2 p-0">
+            <i class="bi bi-chevron-left me-3"></i>find out more
+          </a>
+        </div> 
+         </div>
+    <div class=" card  col-10 col-lg-3 col-md-5 ms-3 shadow-lg">
+        <div class="card-body p-1">
+          <img src="./media/cq5dam.resized.img.485.low.time1617873688407.jpg" alt="" class="w-100">
+          <h4 class="">BMW Corporate & Direct Sales</h4>
+          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, aliquam!</p>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="btn p-lg-2 p-0">
+            <i class="bi bi-chevron-left me-3"></i>find out more
+          </a>
+        </div>  
+        </div>
+    <div class=" card col-10 col-lg-3 col-md-5 ms-3 shadow-lg">
+        <div class="card-body p-1">
+          <img src="./media/cq5dam.resized.img.485.low.time1560772316798.jpg" alt="" class="w-100">
+          <h4 class="">Service with BMW</h4>
+          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, aliquam!</p>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="btn p-lg-2 p-0">
+            <i class="bi bi-chevron-left me-3"></i>find out more
+          </a>
+        </div>
+    </div>
+</div> 
+</div>
+
+<!-- form -->
+<div class="container  pt-3 mt-5 bg-warning">
+  <div class="row justify-content-between">
+    <div class="col-12 col-lg-6 ">
+      <form action="" class="p-3">
+        <div class="row">
+        <div class=" col-12 col-lg-6 mb-3">
+          <label for="" class="form-label">Your Name</label>
+          <input type="text" class=" form-control is-valid">
+          <div class=" valid-feedback"><i class="bi bi-brightness-alt-high-fill fs-2"></i></div>
+        </div>
+      
+        <div class=" col-12 col-lg-6 mb-3">
+          <label for="" class="form-label">Email</label>
+          <input type="text" class=" form-control is-invalid"  placeholder="@gmail">
+          <div class=" invalid-feedback"><i class="bi bi-emoji-frown-fill fs-4"></i></div>
+        </div>
+      </div>
+        <div class="mb-3">
+         <select name="" id="" class=" form-select">
+          <option value="" class=" selected">Choose Car type</option>
+          <option value="">BMW</option>
+          <option value="">BMW</option>
+          <option value="">BMW</option>
+         </select>
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label fs-3 d-block fw-bold">Gender</label>
+          <div class=" form-check form-check-inline">
+            <input type="radio" class=" form-check-input" id="male" name="gender">
+            <label for="male" class="form-check-label">Male</label>
+          </div>
+          <div class=" form-check form-check-inline">
+            <input type="radio" class=" form-check-input" id="female" name="gender">
+            <label for="female" class="form-check-label">Female</label>
+          </div>
+        </div>
+        <div class="">
+          <label for="" class="form-label fw-bold">Telephone</label>
+          <input type="tel" class="border-1 ms-3" placeholder="09-000344565" required>
+        </div>
+        <button class="btn btn-danger ms-5 my-3 d-block">Good Luck</button>
+      </form>
+    </div>
+    <div class="col-12 col-lg-6">
+      <div class="display-4 p-2 fw-bold text-center">Rental Car from just
+        <br>$150/Day
+      </div>
+      <img src="./media/BMW-X1-xDrive25e_ModelCard.png.asset.1654755120778.png" alt="" class="w-100 car-img" style="height:200px;">
+    </div>
+  </div>
+</div>
 </body>
 </html>
